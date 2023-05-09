@@ -178,10 +178,33 @@ font-family: 'Work Sans', sans-serif;
         color: #5edaf0;
 
     }
+    .anime {
+  position: relative;
+}
+.anime img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  animation: fadeIn 2s forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
   </style>
 </head>
 
 <body>
+  <div class="anime">
+
   <header class="header">
     <a href="#" class="logo">MurB</a>
     <nav class="nav-items">
@@ -194,10 +217,11 @@ font-family: 'Work Sans', sans-serif;
     <div class="intro">
       <h1>Manage Business</h1>
       <p>Easy And User Friendly Interface.</p>
-      <button>Login </button>
+      <a href="login.html"><button>Login </button></a>
     </div>
     
     </div>
+    
     <div class="about-me">
       <div class="about-me-text">
         <h2>Why MurB Dashboard ?</h2>
@@ -223,6 +247,8 @@ font-family: 'Work Sans', sans-serif;
       </div>
     </div>
   </footer>
+</div>
+
 </body>
 
 </html>
